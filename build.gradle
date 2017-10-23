@@ -1,0 +1,33 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = "main"
+
+repositories {
+   mavenCentral()
+}
+
+dependencies {
+  testCompile 'junit:junit:4.12'
+}
+
+
+task sequencehelp << {
+    System.out.println("Integer Sequence Project");
+    System.out.println("Given an integer n as an argument, displays Tri(n) and LC(n).")
+}
+
+run {
+    try {
+        systemProperties System.getProperties()
+	args System.getProperty("args").split()
+    } catch (Exception e) {
+        // println "Please add -Dargs=\"...\" even if it is empty"
+    }
+	
+}
+
+task demo(type: Exec) << {
+     // commandLine "gradle -q run -Dargs=\"30\""
+     commandLine "ls"
+}
