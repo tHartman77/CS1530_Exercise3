@@ -30,7 +30,7 @@ public class Sequence
 		return ans;
 	}
 
-	public static int lazycaterer (int x)
+	public static int lazyCaterer (int x)
 	{
 		double pow = Math.pow(x,2);
 		int ans = (int)pow + x + 2;
