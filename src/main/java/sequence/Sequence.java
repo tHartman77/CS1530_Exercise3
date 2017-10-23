@@ -19,7 +19,7 @@ public class Sequence
 		}
 
 		System.out.println("Tri(n) = " + triangle(cmdline));
-		System.out.println("Lazy(n) = " + lazycaterer(cmdline));
+		System.out.println("Lazy(n) = " + lazyCaterer(cmdline));
 	}
 
 	public static int triangle (int x)
