@@ -17,7 +17,7 @@ public class SequenceTest {
 
     @Test
     public void testTriangle10(){
-        assertEquals(Sequence.triangle(10),49);
+        assertEquals(Sequence.triangle(10),55);
     }
 
     @Test
